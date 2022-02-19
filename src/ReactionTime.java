@@ -21,6 +21,6 @@ public class ReactionTime {
         long endTime = System.currentTimeMillis();
 
         long timeDifference = endTime - startTime;
-        System.out.println("reaction time : " + timeDifference +" milliseconds");
+        System.out.println("reaction time : " + timeDifference + " milliseconds");
     }
 }
