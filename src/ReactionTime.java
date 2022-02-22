@@ -12,15 +12,17 @@ public class ReactionTime {
         System.out.println("start typing ...");
 
         // timer counting starts from this line
-        long startTime = System.currentTimeMillis();
+        // long startTime = System.currentTimeMillis();  // legends say nano is more accurate than milli  here.
+        long startTime = System.nanoTime();
 
         // user input
         scanner.next();
 
         // time counting stops right after hitting enter
-        long endTime = System.currentTimeMillis();
+        // long endTime = System.currentTimeMillis();  
+        long endTime = System.nanoTime();
 
         long timeDifference = endTime - startTime;
-        System.out.println("reaction time : " + timeDifference + " milliseconds");
+        System.out.println("reaction time : " + timeDifference + " nano-seconds");
     }
 }
